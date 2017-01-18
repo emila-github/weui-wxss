@@ -3,6 +3,12 @@ Page({
         list: [
             {
                 id: 'form',
+                name: 'demo',
+                open: false,
+                pages: ['tapmenu', 'forlist']
+            },
+            {
+                id: 'form',
                 name: '表单',
                 open: false,
                 pages: ['button', 'list', 'input', 'slider', 'uploader']
@@ -23,7 +29,7 @@ Page({
                 id: 'nav',
                 name: '导航相关',
                 open: false,
-                pages: ['navbar', 'tabbar', 'tapmenu']
+                pages: ['navbar', 'tabbar']
             },
             {
                 id: 'search',

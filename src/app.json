@@ -2,6 +2,9 @@
   "pages": [
     "example/index",
 
+    "example/forlist/forlist",
+    "example/tapmenu/tapmenu",
+
     "example/button/button",
     "example/list/list",
     "example/input/input",
@@ -30,7 +33,6 @@
 
     "example/navbar/navbar",
     "example/tabbar/tabbar",
-    "example/tapmenu/tapmenu",
 
     "example/searchbar/searchbar"
   ],
