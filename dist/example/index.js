@@ -23,7 +23,7 @@ Page({
                 id: 'nav',
                 name: '导航相关',
                 open: false,
-                pages: ['navbar', 'tabbar']
+                pages: ['navbar', 'tabbar', 'tapmenu']
             },
             {
                 id: 'search',

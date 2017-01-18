@@ -1,0 +1,12 @@
+<view class="menu">
+    <block wx:for="{{typeMenu}}" wx:for-index="idx">
+        <view class="menu-tab" data-index="{{idx}}" bindtap="tapMainMenu">{{item.title}}</view>
+        <view class="menu-con {{subMenuDisplay[idx]}}">
+            <ul>
+                <block wx:for="{{item.subMenu}}" wx:for-index="idxSub" wx:for-item="itemSub">
+                    <li class="{{subMenuHighLight[idx][idxSub]}}" data-index="{{idx}}-{{idxSub}}" bindtap="tapSubMenu">{{itemSub.title}}</li>
+                </block>
+            </ul>
+        </view>
+    </block>
+</view>

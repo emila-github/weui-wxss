@@ -30,6 +30,7 @@
 
     "example/navbar/navbar",
     "example/tabbar/tabbar",
+    "example/tapmenu/tapmenu",
 
     "example/searchbar/searchbar"
   ],
