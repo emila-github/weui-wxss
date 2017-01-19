@@ -1,0 +1,42 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">List</view>
+        <view class="page__desc">列表</view>
+    </view>
+    <view class="page__bd">
+        <ul class="plist-matter">
+            <block wx:for="{{listData}}" wx:for-index="idx">
+                <li data-id="{{item.id}}" data-topicId="{{item.commentPrefix}}{{item.id}}">
+                    <navigator url="../list/list?storeId={{item.id}}" class="art-item">
+                        <view class="pic">
+                            <view class="img">
+                                <image class="lazy" src="{{item.imageUrl}}" alt="{{item.name}}" />
+                            </view>
+                            <i class="ico-rmd"></i>
+                            <p><span class="star"><span class="star-in" style="width:{{item.levelPercent}}%"></span></span><span class="t1">{{item.level}}</span></p>
+                        </view>
+                        <view class="detail">
+								<span class="c1">
+									<span class="tip">
+										<span class="tip-con2" wx:if="{{item.type1}}">免</span>
+										<span class="tip-con1" wx:if="{{item.type3}}">送</span>
+										<span class="tip-con1" wx:if="{{item.type2}}">折</span>
+									</span>
+									<text class="tit">{{item.name}}</text>
+								</span>
+								<span class="c2">
+                                    <text class="t2">人均消费{{item.price}}元</text>
+								</span>
+								<span class="c3">
+									<text class="t3"><i class="ico-interest"></i>{{item.uv}}人感兴趣</text>
+									<text class="t3"><i class="ico-comment"></i><span class="js-cv">0</span>个评论</text>
+								</span>
+                        </view>
+                    </navigator>
+                </li>
+            </block>
+        </ul>
+
+        <image src="http://ue.17173cdn.com/a/vr/index/2016/m/img/default.png"></image>
+    </view>
+</view>

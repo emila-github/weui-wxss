@@ -1,0 +1,25 @@
+.attrlist{ display: flex; flex-direction: column;}
+.attrlist li{}
+.weui-flex{border: solid 1px #b4b472; padding: 5px; margin: 5px 0px;}
+.placeholder{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: #EBEBEB;
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #000;
+}
+.flex-wrap-box .placeholder{
+    min-width: 100rpx;
+}
+.flex-align-content-box{
+    height: 100px;
+}
+.flex-shrink-box .placeholder{
+    flex-basis: 50px;
+}
+
+.flex-align-self-box .placeholder{
+    line-height: 50px;
+}

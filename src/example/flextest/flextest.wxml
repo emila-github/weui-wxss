@@ -1,0 +1,392 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">Flex</view>
+        <view class="page__desc">Flex布局</view>
+        <view class="page__desc">Flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。
+            任何一个容器都可以指定为Flex布局。</view>
+        <view class="page__desc">设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。</view>
+        <image src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071003.jpg"></image>
+        <view class="page__title">基本概念</view>
+        <view class="page__desc">采用Flex布局的元素，称为Flex容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为Flex项目（flex item），简称"项目"。</view>
+        <image src="http://www.ruanyifeng.com/blogimg/asset/2015/bg2015071004.png"></image>
+        <view class="page__desc">容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。
+            项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。</view>
+    </view>
+
+
+    <view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+
+        <view class="page__title">flex-direction属性</view>
+        <view class="page__desc">
+            flex-direction属性决定主轴的方向（即项目的排列方向）。
+            <text>.box {
+                flex-direction: row | row-reverse | column | column-reverse;
+            }</text>
+            <ul class="attrlist">
+                <li>row（默认值）：主轴为水平方向，起点在左端。</li>
+                <li>row-reverse：主轴为水平方向，起点在右端。</li>
+                <li>column：主轴为垂直方向，起点在上沿。</li>
+                <li>column-reverse：主轴为垂直方向，起点在下沿。</li>
+            </ul>
+        </view>
+        <view class="weui-flex" style="flex-direction: row;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex" style="flex-direction: row-reverse;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex" style="flex-direction: column;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex" style="flex-direction: column-reverse;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+
+
+        <view class="page__title">flex-wrap属性</view>
+        <view class="page__desc">
+            默认情况下，项目都排在一条线（又称"轴线"）上。flex-wrap属性定义，如果一条轴线排不下，如何换行。
+            <text>.box {
+                flex-wrap: nowrap | wrap | wrap-reverse;
+                }</text>
+            <ul class="attrlist">
+                <li>nowrap（默认）：不换行。</li>
+                <li>wrap：换行，第一行在上方。</li>
+                <li>wrap-reverse：换行，第一行在下方。</li>
+            </ul>
+        </view>
+        <view class="weui-flex flex-wrap-box" style="flex-wrap: nowrap;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex flex-wrap-box" style="flex-wrap:wrap;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex flex-wrap-box" style="flex-wrap: wrap-reverse;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+
+
+        <view class="page__title">flex-flow属性</view>
+        <view class="page__desc">
+            <text>flex-flow属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。</text>
+            <text>.box {
+                flex-flow: flex-direction || flex-wrap;
+                }</text>
+        </view>
+        <view class="weui-flex flex-wrap-box" style="flex-flow: row-reverse wrap-reverse;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+
+
+        <view class="page__title">justify-content属性</view>
+        <view class="page__desc">
+            <text>justify-content属性定义了项目在主轴上的对齐方式。</text>
+            <text>它可能取5个值，具体对齐方式与轴的方向有关。下面假设主轴为从左到右。</text>
+            <text>.box {
+                justify-content: flex-start | flex-end | center | space-between | space-around;
+                }</text>
+        </view>
+        <ul class="attrlist">
+            <li>flex-start（默认值）：左对齐</li>
+            <li>flex-end：右对齐</li>
+            <li>center： 居中</li>
+            <li>space-between：两端对齐，项目之间的间隔都相等。</li>
+            <li>space-around：每个项目两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍。</li>
+        </ul>
+        <view class="weui-flex flex-justify-box" style="justify-content: flex-start;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;">C</view>
+        </view>
+        <view class="weui-flex flex-justify-box" style="justify-content: flex-end;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;">C</view>
+        </view>
+        <view class="weui-flex flex-justify-box" style="justify-content: center;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;">C</view>
+        </view>
+        <view class="weui-flex flex-justify-box" style="justify-content: space-between;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;">C</view>
+        </view>
+        <view class="weui-flex flex-justify-box" style="justify-content: space-around;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;">C</view>
+        </view>
+
+
+
+
+        <view class="page__title">align-items属性</view>
+        <view class="page__desc">
+            <text>align-items属性定义项目在交叉轴上如何对齐。</text>
+            <text>它可能取5个值。具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下。</text>
+            <text>.box {
+                align-items: flex-start | flex-end | center | baseline | stretch;
+                }</text>
+        </view>
+        <ul class="attrlist">
+            <li>flex-start：交叉轴的起点对齐。</li>
+            <li>flex-end：交叉轴的终点对齐。</li>
+            <li>center：交叉轴的中点对齐。</li>
+            <li>baseline: 项目的第一行文字的基线对齐。</li>
+            <li>stretch（默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。(微信测试无效)</li>
+        </ul>
+        <view class="weui-flex flex-justify-box" style="align-items: flex-start;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx; height: 100px;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;  height: 200px;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;  height: 300px;">C</view>
+        </view>
+        <view class="weui-flex flex-justify-box" style="align-items: flex-end;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx; height: 100px;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;  height: 200px;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;  height: 300px;">C</view>
+        </view>
+        <view class="weui-flex flex-justify-box" style="align-items: center;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx; height: 100px;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;  height: 200px;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;  height: 300px;">C</view>
+        </view>
+        <view class="weui-flex flex-justify-box" style="align-items: baseline;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx; height: 100px;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx;  height: 200px; line-height: 150rpx;">B<br/>b<br/>b</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;  height: 300px;">C</view>
+        </view>
+        <view class="weui-flex flex-justify-box" style="align-items: stretch; height: 200px;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; max-width: 40rpx;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;  max-width: 20rpx; ">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;  max-width: 60rpx;">C</view>
+        </view>
+
+
+
+        <view class="page__title">align-content属性(微信目前无效)</view>
+        <view class="page__desc">
+            align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。
+            <text>.box {
+                align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+                }</text>
+            <ul class="attrlist">
+                <li>flex-start：与交叉轴的起点对齐。</li>
+                <li>flex-end：与交叉轴的终点对齐。</li>
+                <li>center：与交叉轴的中点对齐。</li>
+                <li>space-between：与交叉轴两端对齐，轴线之间的间隔平均分布。</li>
+                <li>space-around：每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。</li>
+                <li>stretch（默认值）：轴线占满整个交叉轴。</li>
+            </ul>
+        </view>
+        <view class="weui-flex flex-align-content-box" style="align-content: flex-start;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex flex-align-content-box" style="align-content: flex-end; flex-wrap: wrap;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex flex-align-content-box" style="align-content: center;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex flex-align-content-box" style="align-content: space-between;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex flex-align-content-box" style="align-content: space-around;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+        <view class="weui-flex flex-align-content-box" style="align-content: stretch;">
+            <view class="weui-flex__item placeholder" style="background-color:coral;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+
+
+
+        <view class="page__title">order属性</view>
+        <view class="page__desc">
+            order属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。
+            <text>.item  {
+                order: integer;
+                }</text>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item placeholder" style="background-color:coral; order: 2;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue; order: 1;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink; order: -1;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey; order: -2;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+
+
+        <view class="page__title">flex-grow属性</view>
+        <view class="page__desc">
+            flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+            <text>.item {
+                flex-grow: number; /* default 0 */
+                }</text>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item placeholder" style="background-color:coral; flex-grow: 2;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey; flex-grow: 3;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+
+
+
+        <view class="page__title">flex-shrink属性</view>
+        <view class="page__desc">
+            <text>flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</text>
+            <text>.item {
+                flex-shrink: number; /* default 1 */
+                }</text>
+            <text>如果所有项目的flex-shrink属性都为1，当空间不足时，都将等比例缩小。如果一个项目的flex-shrink属性为0，其他项目都为1，则空间不足时，前者不缩小。</text>
+            <text>负值对该属性无效</text>
+        </view>
+        <view class="weui-flex flex-shrink-box">
+            <view class="weui-flex__item placeholder" style="background-color:coral; flex-shrink: 0.5;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue; flex-shrink: 0;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki; flex-shrink: 2;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;">F</view>
+        </view>
+
+        <view class="page__title">flex-basis属性</view>
+        <view class="page__desc">
+            <text>flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。</text>
+            <text>.item {
+                flex-basis: length | auto; /* default auto */
+                }</text>
+            <text>它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。</text>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item placeholder" style="background-color:coral; flex-grow: 1;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue; flex-shrink: 0; flex-basis: 50px;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki; flex-grow: 3; flex-basis: 50px;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+        </view>
+
+
+
+        <view class="page__title">flex属性</view>
+        <view class="page__desc">
+            <text>flex属性是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。</text>
+            <text>.item {
+                flex: none | [ 'flex-grow' 'flex-shrink'? || 'flex-basis' ]
+                }</text>
+            <text>该属性有两个快捷值：auto (1 1 auto) 和 none (0 0 auto)。</text>
+            <text>建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。</text>
+        </view>
+        <view class="weui-flex">
+            <view class="weui-flex__item placeholder" style="background-color:coral; flex: 1 1 auto;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue; flex: auto;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki; flex: none;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink; flex: 0 0 auto;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;">E</view>
+        </view>
+
+
+        <view class="page__title">align-self属性</view>
+        <view class="page__desc">
+            <text>align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</text>
+            <text>.item {
+                align-self: auto | flex-start | flex-end | center | baseline | stretch;
+                }</text>
+            <text>该属性可能取6个值，除了auto，其他都与align-items属性完全一致。</text>
+        </view>
+        <view class="weui-flex flex-align-self-box" style="height: 200px;">
+            <view class="weui-flex__item placeholder" style="background-color:coral; align-self: auto;">A</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightblue; align-self: flex-start;">B</view>
+            <view class="weui-flex__item placeholder" style="background-color:khaki; align-self: flex-end;">C</view>
+            <view class="weui-flex__item placeholder" style="background-color:pink; align-self: center;">D</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgrey;align-self: baseline;">E</view>
+            <view class="weui-flex__item placeholder" style="background-color:lightgreen;align-self: stretch;">F</view>
+        </view>
+
+
+    </view>
+</view>
