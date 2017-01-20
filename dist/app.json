@@ -1,5 +1,6 @@
 {
   "pages": [
+    "example/scrollview/scrollview",
     "example/index",
 
     "example/flextest/flextest",
@@ -7,6 +8,7 @@
     "example/forlistrequest/forlistrequest",
     "example/tapmenu/tapmenu",
     "example/vrdropdown/vrdropdown",
+    "example/scrollview/scrollview",
 
     "example/button/button",
     "example/list/list",

@@ -5,7 +5,7 @@ Page({
                 id: 'form',
                 name: 'demo',
                 open: false,
-                pages: ['flextest','tapmenu', 'forlist', 'forlistrequest','vrdropdown']
+                pages: ['flextest','tapmenu', 'forlist', 'forlistrequest','vrdropdown','scrollview']
             },
             {
                 id: 'form',

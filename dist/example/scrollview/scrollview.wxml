@@ -1,0 +1,11 @@
+<view class="container">
+    <view>scroll-view 内无法触发 onPullDownRefresh</view>
+    <scroll-view class="container-body" scroll-y="true" scroll-into-view="searchbox" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+        <view class="searchbox" id="searchbox" style="top: {{scrolltop}}px">搜索条浮动</view>
+        <view class="test-list">
+
+            <view class="test-item" wx:for="{{testdata}}" wx:key="{{item.id}}">{{item.name}}</view>
+        </view>
+        <icon class="gototop {{scrolltop>200?'active':''}}" bindtap="goToTop" type="download" size="36" color="#3399FF"></icon>
+    </scroll-view>
+</view>
