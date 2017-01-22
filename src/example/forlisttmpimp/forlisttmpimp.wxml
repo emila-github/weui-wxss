@@ -1,0 +1,11 @@
+<import src="template/list"/>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">List</view>
+        <view class="page__desc">列表</view>
+    </view>
+    <view class="page__bd">
+        <template is="vr-list" data="{{ listData }}"/>
+        <image src="http://ue.17173cdn.com/a/vr/index/2016/m/img/default.png"></image>
+    </view>
+</view>

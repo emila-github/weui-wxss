@@ -1,11 +1,12 @@
 {
   "pages": [
-    "example/scrollview/scrollview",
+    "example/forlisttmpimp/forlisttmpimp",
     "example/index",
 
     "example/flextest/flextest",
     "example/forlist/forlist",
     "example/forlistrequest/forlistrequest",
+    "example/forlisttmpimp/forlisttmpimp",
     "example/tapmenu/tapmenu",
     "example/vrdropdown/vrdropdown",
     "example/scrollview/scrollview",
