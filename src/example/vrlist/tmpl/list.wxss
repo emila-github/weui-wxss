@@ -30,7 +30,8 @@
     top: 0;
     background-position: 0 -15px; }
 .list{
-    height: 600px;
+    /*height: 600px;*/
+    height: 100vh;
     overflow: hidden;
 }
 .plist-matter {display: flex; flex-direction: column;}

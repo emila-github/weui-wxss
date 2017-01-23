@@ -11,6 +11,7 @@
     "example/vrdropdown/vrdropdown",
     "example/scrollview/scrollview",
     "example/wxkey/wxkey",
+    "example/scrollintoview/scrollintoview",
 
     "example/button/button",
     "example/list/list",

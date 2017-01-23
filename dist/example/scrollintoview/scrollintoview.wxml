@@ -1,0 +1,19 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">锚点</view>
+        <view class="page__desc">navigator的url只能是app.json里配置的路由，只支持查询字符串，不支持hash，所以不能通过链接做锚点了。</view>
+    </view>
+    <view class="page__bd">
+
+        <view>
+            <button data-hash="hash1" bindtap="goHash">点击定向hash1</button>
+            <button data-hash="hash2" bindtap="goHash">点击定向hash2</button>
+        </view>
+        <scroll-view scroll-y="true" scroll-into-view="{{toView}}" class="scroll-box">
+            <view id="hash1"></view>
+            <view id="hash2"></view>
+        </scroll-view>
+
+    </view>
+</view>
+

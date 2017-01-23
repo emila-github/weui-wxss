@@ -1,4 +1,5 @@
 <template name="vr-list">
+    <p id="demo"></p>
     <scroll-view scroll-y="true" class="list" bindscrolltolower="handleLoadMore">
         <ul class="plist-matter">
             <template is="{{'item'}}" data="{{ item }}" wx:for="{{ listData }}" wx:for-index="idx" wx:key="{{ item.id }}"/>
