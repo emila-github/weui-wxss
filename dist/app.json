@@ -1,15 +1,16 @@
 {
   "pages": [
-    "example/forlisttmpimp/forlisttmpimp",
     "example/index",
 
     "example/flextest/flextest",
     "example/forlist/forlist",
     "example/forlistrequest/forlistrequest",
     "example/forlisttmpimp/forlisttmpimp",
+    "example/vrlist/vrlist",
     "example/tapmenu/tapmenu",
     "example/vrdropdown/vrdropdown",
     "example/scrollview/scrollview",
+    "example/wxkey/wxkey",
 
     "example/button/button",
     "example/list/list",
@@ -42,6 +43,15 @@
 
     "example/searchbar/searchbar"
   ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "example/index",
+      "text": "首页"
+    }, {
+      "pagePath": "example/wxkey/wxkey",
+      "text": "测试"
+    }]
+  },
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "WeUI for 小程序",

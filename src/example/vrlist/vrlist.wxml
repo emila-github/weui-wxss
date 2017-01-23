@@ -1,0 +1,10 @@
+<import src="tmpl/list"/>
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">VR-List</view>
+        <view class="page__desc">列表</view>
+    </view>
+    <view class="page__bd">
+        <template is="vr-list" data="{{ listData, loading, hasMore }}"/>
+    </view>
+</view>
