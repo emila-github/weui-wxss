@@ -12,6 +12,7 @@
     "example/scrollview/scrollview",
     "example/wxkey/wxkey",
     "example/scrollintoview/scrollintoview",
+    "example/rpx/rpx",
 
     "example/button/button",
     "example/list/list",
@@ -49,7 +50,7 @@
       "pagePath": "example/index",
       "text": "首页"
     }, {
-      "pagePath": "example/wxkey/wxkey",
+      "pagePath": "example/rpx/rpx",
       "text": "测试"
     }]
   },

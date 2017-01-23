@@ -1,0 +1,17 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">尺寸单位</view>
+        <view class="page__desc">
+            rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏幕宽为750rpx。
+            如在 iPhone6 上，屏幕宽度为375px，共有750个物理像素，则750rpx = 375px = 750物理像素，
+            1rpx = 0.5px = 1物理像素。
+        </view>
+    </view>
+    <view class="page__bd">
+        <view class="rpx-box" style="width: 750rpx;"></view>
+
+        <view class="rpx-box" style="width: 375rpx;"></view>
+        <view class="rpx-box" style="width: 375px;"></view>
+
+    </view>
+</view>
