@@ -5,13 +5,13 @@ Page({
                 id: 'form',
                 name: 'demo',
                 open: false,
-                pages: ['flextest','tapmenu', 'forlist', 'forlistrequest', 'forlisttmpimp', 'vrlist','vrdropdown','scrollview', 'wxkey', 'scrollintoview', 'rpx']
+                pages: ['flextest','tapmenu', 'forlist', 'forlistrequest', 'forlisttmpimp', 'vrlist','vrdropdown','scrollview', 'wxkey', 'scrollintoview', 'rpx', 'map']
             },
             {
                 id: 'form',
                 name: '表单',
                 open: false,
-                pages: ['button','button2', 'list', 'input', 'slider', 'uploader']
+                pages: ['button','button2','checkbox', 'list', 'input', 'slider', 'uploader']
             },
             {
                 id: 'widget',

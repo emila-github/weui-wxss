@@ -7,15 +7,18 @@
     "example/forlistrequest/forlistrequest",
     "example/forlisttmpimp/forlisttmpimp",
     "example/vrlist/vrlist",
+    "example/vrfinal/vrfinal",
     "example/tapmenu/tapmenu",
     "example/vrdropdown/vrdropdown",
     "example/scrollview/scrollview",
     "example/wxkey/wxkey",
     "example/scrollintoview/scrollintoview",
     "example/rpx/rpx",
+    "example/map/map",
 
     "example/button/button",
     "example/button2/button2",
+    "example/checkbox/checkbox",
     "example/list/list",
     "example/input/input",
     "example/slider/slider",
@@ -47,11 +50,18 @@
     "example/searchbar/searchbar"
   ],
   "tabBar": {
+    "backgroundColor": "#515151",
+    "color":"white",
+    "borderStyle":"white",
     "list": [{
+      "iconPath": "example/images/apple-touch-icon.png",
+      "selectedIconPath": "example/images/apple-touch-icon.png",
       "pagePath": "example/index",
       "text": "首页"
     }, {
-      "pagePath": "example/button2/button2",
+      "iconPath": "example/images/apple-touch-icon.png",
+      "selectedIconPath": "example/images/apple-touch-icon.png",
+      "pagePath": "example/vrlist/vrlist",
       "text": "测试"
     }]
   },

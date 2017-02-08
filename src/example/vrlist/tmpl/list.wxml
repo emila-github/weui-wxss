@@ -17,7 +17,7 @@
 
 <template name="item">
     <li data-id="{{item.id}}" data-topicId="{{item.commentPrefix}}{{item.id}}">
-        <navigator url="../list/list?storeId={{item.id}}" class="art-item">
+        <navigator url="../vrfinal/vrfinal?storeId={{item.id}}" class="art-item">
             <view class="pic">
                 <view class="img">
                     <image class="lazy" src="{{item.imageUrl}}" alt="{{item.name}}" />

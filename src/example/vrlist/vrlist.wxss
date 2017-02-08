@@ -1,1 +1,14 @@
 @import "tmpl/list.wxss";
+.page{background-color: #fff;}
+.header{
+    padding: .8em 0 0 .5em;
+    background-color: #515151;
+    height: 2.8em;
+    display: flex;
+    flex-direction:row;
+}
+.gb-topbar-logo{
+    width: 263rpx;
+}
+.gb-topbar-logo image{ width: 263rpx; height: 47rpx;}
+.gb-topbar-city{ color: #ccc; padding-left: 15px;}
