@@ -46,7 +46,7 @@
                                     </span>
 
 
-                        <span class="t3"><i class="ico-address"></i>福州市五一北路126号新华书店3层</span>
+                        <span class="t3" bindtap="mapTap"><i class="ico-address"></i>福州市五一北路126号新华书店3层</span>
 
 
 

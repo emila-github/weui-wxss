@@ -50,6 +50,11 @@ Page({
             index: e.detail.value
         })
     },
+    mapTap () {
+        wx.navigateTo({
+            url: '../map/map?id=1'
+        })
+    },
     telTap () {
         console.log('view tap')
         wx.makePhoneCall({
