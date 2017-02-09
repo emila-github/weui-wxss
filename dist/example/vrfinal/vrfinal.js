@@ -1,6 +1,7 @@
 var WxParse = require('../wxParse/wxParse.js');
 Page({
     data: {
+        storeId: null,
         article: `<div class="box-bd">
                             <p class="MsoNormal" style="text-align: center;" align="center"><strong><span style="font-family: 宋体; mso-ascii-theme-font: minor-fareast; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-fareast;">炫境世界体验店与服务介绍</span></strong></p>
 <p class="MsoNormal"><span lang="EN-US" style="font-family: 宋体; mso-ascii-theme-font: minor-fareast; mso-fareast-font-family: 宋体; mso-fareast-theme-font: minor-fareast; mso-hansi-theme-font: minor-fareast;">&nbsp;</span></p>
@@ -42,6 +43,9 @@ Page({
     onLoad (options){
         console.log('options=', options);
         var that = this;
+        that.setData({
+            storeId: options.storeId
+        })
         WxParse.wxParse('article', 'html', that.data.article, that, 5);
     },
     bindPickerChange: function(e) {
@@ -53,6 +57,11 @@ Page({
     mapTap () {
         wx.navigateTo({
             url: '../map/map?id=1'
+        })
+    },
+    joinTap () {
+        wx.navigateTo({
+            url: '../vrjoin/vrjoin?storeId=' + this.data.storeId
         })
     },
     telTap () {

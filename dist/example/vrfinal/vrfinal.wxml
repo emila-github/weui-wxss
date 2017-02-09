@@ -166,7 +166,7 @@
         <view bindtap="shareTap" class="btn-share" data-role="shareBtn"><i class="ico-share"></i></view>
         <view href="#comment" class="btn-comment"><i class="ico-comment-l"></i><span class="comment-count" id="changyan_count_unit">0</span>个评论</view>
 
-        <navigator href="join.html?storeId=3" class="btn-join" data-role="joinBtn">立即参与</navigator>
+        <view bindtap="joinTap" class="btn-join" data-role="joinBtn">立即参与</view>
 
     </view>
 </view>

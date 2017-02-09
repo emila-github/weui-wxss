@@ -8,6 +8,7 @@
     "example/forlisttmpimp/forlisttmpimp",
     "example/vrlist/vrlist",
     "example/vrfinal/vrfinal",
+    "example/vrjoin/vrjoin",
     "example/tapmenu/tapmenu",
     "example/vrdropdown/vrdropdown",
     "example/scrollview/scrollview",
@@ -67,7 +68,7 @@
     }, {
       "iconPath": "example/images/apple-touch-icon.png",
       "selectedIconPath": "example/images/apple-touch-icon.png",
-      "pagePath": "example/imagesmode/imagesmode",
+      "pagePath": "example/icons/icons",
       "text": "测试"
     }]
   },
