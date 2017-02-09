@@ -93,6 +93,22 @@ swiper{height: 358rpx}
     top: 0;
     background-position: 0 -15px; }
 
+.tip {
+    overflow: hidden; }
+.tip [class^="tip-con"] {
+    float: left;
+    display: block;
+    color: #08cdb7;
+    font-size: .625rem;
+    border: 1px solid #08cdb7;
+    border-radius: 2px;
+    padding: 0 .125rem;
+    margin-left: .25rem;
+    white-space: nowrap; }
+.tip .tip-con2 {
+    background: #08cdb7;
+    color: #fff; }
+
 .plist-matter li {
     border-bottom: 1px solid #ececec;
     font-size: .625rem;
@@ -264,3 +280,35 @@ swiper{height: 358rpx}
     border-left: 1px solid #dadada;
     border-top: 1px solid #dadada;
     transform: rotate(45deg); }
+
+
+.bar-final-act {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 300;
+    background: rgba(51, 51, 51, 0.9); }
+.bar-final-act .bar-in {
+    padding: .625rem .625rem 0;
+    height: 2.5rem;
+    overflow: hidden;
+    font-size: .875rem;
+    line-height: 2.15; }
+.bar-final-act .btn-share {
+    float: left;
+    display: block;
+    padding: 0 5px; }
+.bar-final-act .btn-comment {
+    float: left;
+    display: block;
+    color: #fff;
+    margin-left: 6.6%; }
+.bar-final-act .btn-join {
+    display: block;
+    float: right;
+    font-size: .9375rem;
+    color: #000;
+    background: #55e1d2;
+    line-height: 2;
+    padding: 0 .75rem; }

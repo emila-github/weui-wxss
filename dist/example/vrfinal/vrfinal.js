@@ -61,6 +61,19 @@ Page({
             phoneNumber: '10086' //仅为示例，并非真实的电话号码
         })
     },
+    shareTap() {
+        console.log('shareTap tap')
+       this.onShareAppMessage();
+    },
+    //分享
+    onShareAppMessage: function () {
+        console.log('onShareAppMessage')
+        return {
+            title: '自定义分享标题',
+            desc: '自定义分享描述',
+            path: 'vrfinal/vrfinal?storeId=ID'
+        }
+    },
     getData (datas){
 
     }

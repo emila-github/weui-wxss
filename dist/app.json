@@ -15,6 +15,7 @@
     "example/scrollintoview/scrollintoview",
     "example/rpx/rpx",
     "example/map/map",
+    "example/imagesmode/imagesmode",
 
     "example/button/button",
     "example/button2/button2",
@@ -62,6 +63,11 @@
       "iconPath": "example/images/apple-touch-icon.png",
       "selectedIconPath": "example/images/apple-touch-icon.png",
       "pagePath": "example/vrlist/vrlist",
+      "text": "vr测试"
+    }, {
+      "iconPath": "example/images/apple-touch-icon.png",
+      "selectedIconPath": "example/images/apple-touch-icon.png",
+      "pagePath": "example/imagesmode/imagesmode",
       "text": "测试"
     }]
   },
