@@ -1,4 +1,5 @@
 @import "tmpl/list.wxss";
+@import "../common/footer.wxss";
 .page{background-color: #fff;}
 .header{
     padding: .8em 0 0 .5em;

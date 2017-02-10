@@ -1,6 +1,7 @@
 @import "../wxParse/wxParse.wxss";
+@import "../common/footer.wxss";
 
-.page{background-color: #fff;}
+.page{background-color: #fff; padding-bottom: 118rpx;}
 .header{
     padding: .5em 0 0 .5em;
     background-color: #515151;
