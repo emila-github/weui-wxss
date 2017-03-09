@@ -7,6 +7,7 @@
     "example/forlistrequest/forlistrequest",
     "example/forlisttmpimp/forlisttmpimp",
     "example/vrlist/vrlist",
+    "example/videolist/videolist",
     "example/vrfinal/vrfinal",
     "example/vrjoin/vrjoin",
     "example/tapmenu/tapmenu",
@@ -17,6 +18,7 @@
     "example/rpx/rpx",
     "example/map/map",
     "example/imagesmode/imagesmode",
+    "example/scancode/scancode",
 
     "example/button/button",
     "example/button2/button2",
@@ -68,7 +70,7 @@
     }, {
       "iconPath": "example/images/apple-touch-icon.png",
       "selectedIconPath": "example/images/apple-touch-icon.png",
-      "pagePath": "example/icons/icons",
+      "pagePath": "example/videolist/videolist",
       "text": "测试"
     }]
   },

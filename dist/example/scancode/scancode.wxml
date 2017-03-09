@@ -1,0 +1,1 @@
+<button bindtap="scanCode">扫描</button>

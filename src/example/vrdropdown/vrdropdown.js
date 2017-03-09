@@ -52,7 +52,7 @@ Page({
     },
     setFilterPanel: function(e){ //展开筛选面板
         const d = this.data;
-        const i = e.currentTarget.dataset.findex;
+        const i = e.currentTarget.dataset.index;
         if(d.showfilterindex == i){
             this.setData({
                 showfilter: false,

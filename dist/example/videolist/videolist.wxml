@@ -1,0 +1,17 @@
+<import src="tmpl/list"/>
+<import src="../common/footer.wxml"/>
+<view class="page">
+    <view class="header">
+        <navigator class="gb-topbar-logo" url="vrlist/vrlist">
+            <image src="http://ue1.17173cdn.com/a/vr/xx/2016/m/img/logo.png"></image>
+        </navigator>
+        <navigator class="gb-topbar-city" url="vrlist/vrlist">
+            福州
+        </navigator>
+    </view>
+
+    <video src="http://vod.cdn1.v.17173.com/82e400192821e534009d01e4df7a580062a77f0879006b46/cx2/FLVList/20170210/2/108199021_38687913_1.mp4"></video>
+
+    <template is="vr-list" data="{{ listData, loading, hasMore }}"/>
+    <template is="footer"/>
+</view>
